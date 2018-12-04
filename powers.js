@@ -18,6 +18,26 @@ document.querySelector("#activate-xray").addEventListener("click", function() {
         console.log(xrayHandlerFunction)
 }
 )
+    document.querySelector("#activate-all").addEventListener('click', () => { 
+        const buttons = document.querySelectorAll(".power")
+        buttons.forEach((button) => {
+        button.classList.replace("disabled","enabled");
+            console.log("forEach worked");
+        });
+    })
+
+
+    document.querySelector("#deactivate-all").addEventListener('click', () => { 
+        const buttons = document.querySelectorAll(".power")
+        buttons.forEach((button) => {
+        button.classList.replace("enabled","disabled");
+            console.log("forEach worked");
+        });
+    })
+
+
+
+
     
 
 
